@@ -22,16 +22,16 @@
         <div class="btn-toolbar pull-left" role="toolbar">
           <div class="btn-group navbar-btn" role="group">
             <button type="button" class="btn btn-default nav-btn-left">
-              <span class="glyphicon glyphicon-home"> Home</span>
+              <span class="glyphicon glyphicon-home"></span> Home
             </button>
             <button type="button" class="btn btn-default nav-btn-left">
-              <span class="glyphicon glyphicon-flash"> Moments</span>
+              <span class="glyphicon glyphicon-flash"></span> Moments
             </button>
             <button type="button" class="btn btn-default nav-btn-left">
-              <span class="glyphicon glyphicon-bell"> Notifications</span>
+              <span class="glyphicon glyphicon-bell"></span> Notifications
             </button>
             <button type="button" class="btn btn-default nav-btn-left">
-              <span class="glyphicon glyphicon-envelope"> Messages</span>
+              <span class="glyphicon glyphicon-envelope"></span> Messages
             </button>
           </div>
         </div>
@@ -42,9 +42,9 @@
           <div class="btn-group" role="group">
             <form class="navbar-form navbar-left" role="search">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search Twitter">
+                <input type="text" class="form-control search-bar-text" placeholder="Search Twitter">
                 <span class="input-group-btn">
-                  <button type="submit" class="btn btn-default">
+                  <button type="submit" class="btn btn-default search-bar-btn">
                     <span class="glyphicon glyphicon-search"></span>
                   </button>
                 </span>
@@ -56,7 +56,7 @@
           </div>
           <div class="btn-group navbar-btn" role="group">
             <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-edit"> Tweet</span>
+              <span class="glyphicon glyphicon-edit"></span> Tweet
             </button>
           </div>
         </div>
@@ -69,13 +69,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        Left Sidebar
       </div>
 
 
       <div class="col-md-6">
-        <div class="panel panel-default">
-          <div class="panel-body">
+        <div class="panel panel-default body-panel">
+          <div class="panel-body body-panel">
             <div class="row">
 
               <!--post detail bar at the top -->
@@ -89,17 +88,18 @@
                     <span><a href="#">NASA </a><span class="glyphicon glyphicon-check"></span></span>
                     <br>@NASA
                   </div>
+                </div>
+              </div>
+              <div class = "col-md-4">
+                <div class="btn-group pull-right" role="group">
+                  <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-asterisk"></span>
+                  </button>
+                  <button type="button" class="btn btn-default"><span>Following</span></button>
+                </div>
               </div>
             </div>
-            <div class = "col-md-4">
-              <div class="btn-group pull-right" role="group">
-                <button type="button" class="btn btn-default pull-right">Following</button>
-                <button type="button" class="btn btn-default pull-right">
-                  <span class="glyphicon glyphicon-cog"></span>
-                </button>
-              </div>
-            </div>
-          </div>
+
             <!-- Post content -->
 
             <div class="row">
@@ -107,47 +107,75 @@
                 This spiral galaxy hosts a supermassive black hole that's also super-hungry:
                 <a href="#">http://go.nasa.gov/1Rp6V2w  @NASA_Hubble</a>
                 <br>
-                 <img src="img/galaxy.jpg" width="100%"/>
+                <img src="img/galaxy.jpg" width="100%"/>
+              </div>
+            </div>
+            <hr>
+
+            <!-- Social detail bar -->
+
+            <div class="row">
+              <div class="col-md-2">
+                <span>Retweets<br>1,747</span>
+              </div>
+              <div class="col-md-2">
+                <span>Likes<br>2,911</span>
+              </div>
+              <div class="col-md-8">
+                <div class="btn-group user-btn-group" role="group">
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                  <button type="button" class="btn btn-default btn-users"><a href="#">Pic</a></button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <!--options toolbar-->
+
+            <div class="row option-row">
+              <div class="col-md-11">
+                <span>12:44 PM - 8 Jan 2016 </span>
+                <br>
+                <div class="btn-group option-btn-group pull-left" role="group">
+                  <button type="button" class="btn btn-default option-btn">
+                    <span class="glyphicon glyphicon-arrow-left"></span>
+                  </button>
+                  <button type="button" class="btn btn-default option-btn">
+                    <span class="glyphicon glyphicon-refresh"></span>
+                  </button>
+                  <button type="button" class="btn btn-default option-btn">
+                    <span class="glyphicon glyphicon-heart"></span>
+                  </button>
+                  <button type="button" class="btn btn-default option-btn">
+                    <span class="glyphicon glyphicon-option-horizontal"></span>
+                  </button>
+                </div>
               </div>
             </div>
 
-
-            <div class="row">
-
+            <div class="row reply-row">
+              <div class="col-md-1">
+                PIC
+              </div>
+              <div class="col-md-11 reply-bar">
+                <div class="reply-bar">
+                  <input type="text" class="form-control reply-textarea" placeholder="Reply to @NASA @NASA_Hubble">
+                  <span class="input-group-btn">
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        For Like/Comment/Share, we could use a button group... but on Facebook, they look
-        more like regular links. A better option is an inline list; we can make an inline list of
-        links:
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="list-inline">
-              <li>
-                <a href="#"><span class="glyphicon glyphicon-thumbs-up">
-                </span> Like</a>
-              </li>
-              <li>
-                <a href="#"><span class="glyphicon glyphicon-comment">
-                </span> Comment</a>
-              </li>
-              <li>
-                <a href="#"><span class="glyphicon glyphicon-share-alt">
-                </span> Share</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
-
-
-
-      <div class="col-md-3">
-        Right Sidebar
-      </div>
+      <div class="col-md-3"></div>
     </div>
   </div>
-  <!-- Our Facebook layout will go here. -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below),

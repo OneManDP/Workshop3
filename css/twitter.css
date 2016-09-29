@@ -1,7 +1,59 @@
 body {
-  padding-top: 80px;
+  padding-top: 75px;
+}
+
+.body-panel{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .nav-btn-left {
   border: none;
   background-color: transparent !important;
+  color: gray;
+}
+.search-bar-btn{
+  border-left: none;
+  border-radius: 20px;
+}
+.search-bar-text{
+  border-right: none;
+  border-radius: 20px;
+}
+.btn-users{
+  border: none;
+  padding-left: 6px;
+  padding-right:6px;
+  background-color: transparent !important;
+}
+.user-btn-group{
+  top: -6px
+}
+.option-row{
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-bottom-color:rgb(238,238,238);
+  padding-bottom: 15px;
+}
+.option-btn-group{
+  border: none;
+  margin-left:-4px;
+
+}
+.option-btn{
+  border: none;
+  padding-left: 1px;
+  padding-right:62px;
+  color: gray;
+}
+.reply-row{
+  padding-top:10px;
+  padding-bottom: 10px;
+  background-color: rgb(250,250,250);
+}
+.reply-textarea{
+  margin-left: -10px;
+}
+.reply-bar{
+  padding-right: 0px;
 }
